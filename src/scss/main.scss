@@ -1,4 +1,9 @@
 // * Це головний sass/scss файл проекту
 // * імпортуйте сюди всі інші ваші файли sass/scss
-@import "./modern-normalize.css";
 @import "./st1/style1.scss";
+body{
+    background: #F5F3EA;
+    margin:0;
+    padding-right: 20px;
+    padding-left: 20px;
+}
