@@ -23,9 +23,16 @@ header a{
 }
 .presentation h2{
     text-align: center;
-    //
+
+ @media(min-width:320px){
     font-size: 57px;
-    // 
+ }
+ @media(min-width:768px){
+    font-size: 120px;
+ }
+ @media(min-width:1200px){
+    font-size: 150px;
+ }
     text-transform: uppercase;
     margin-bottom: 30px;
     margin-top: 0px;
@@ -51,26 +58,28 @@ width: 100vw;
     font-style: normal;
     font-weight: 800;
 }
-.logo-section{
-    width: 100vw;
-    margin-left: -20px;
-}
-.logo-section__social{
+// .social-section{
+//     width: 100vw;
+//     margin-left: -20px;
+// }
+.presentation__social{
     text-transform: uppercase;
     text-align: right;
     background-color: #252525;
     color: #FFF;
     font-family: Gilroy-Medium;
     //
+    width: 100%;
     
     padding: 40px;
+    padding-left: 0px;
     font-size: 28px; 
     //
 }
-.logo-section__social svg{
+.presentation__social svg{
     margin-left: 20px;
 }
-.logo-section__list{
+.presentation__logos{
     display: flex;
     padding: 0;
     gap: 20px;
@@ -78,13 +87,15 @@ width: 100vw;
     list-style: none;
     justify-content: center;
 }
-.logo-section__list li{
+.presentation__logos li{
     padding: 15px 40px;
     border-radius: 50px;
     display: flex;
     background: #FFF;
     justify-content: center;
     align-items: center;
-    height: 40px;
     max-width: 160px;
+}
+.presentation__logos li img{
+max-height: 40px;
 }
