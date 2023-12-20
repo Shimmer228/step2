@@ -1,0 +1,32 @@
+.section__title {
+    margin: 10px 0 30px;
+}
+.client-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.logo-img {
+    margin-top: 40px;
+}
+.card-subtitle {
+    @include Gilroy-Semibold ($font-size: 28px, $font-weight: 800, $line-height: 44px);
+}
+.card-text {
+    @include Inter ($line-height: 30px);
+}
+.client-info {
+    display: flex;
+    column-gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $dark-text;
+    &--border {
+        border-bottom: none;
+    }
+}
+.client-name {
+    @include Inter ($font-weight: 600, $line-height: 20px);
+}
+.card-position {
+    @include Inter ($line-height: 20px);
+}
