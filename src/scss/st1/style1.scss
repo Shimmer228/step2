@@ -3,6 +3,25 @@
 a{
     text-decoration: none;
 }
+h2{
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    @media(min-width:320px){
+        font-size: 80px;
+        letter-spacing: 3.2px;
+     }
+     @media(min-width:768px){
+        font-size: 150px;
+        letter-spacing: 6px;
+     }
+     @media(min-width:1200px){
+        font-size: 212px;
+        letter-spacing: 8.48px;
+     }
+     
+
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -16,7 +35,6 @@ header{
 
 }
 header div{
-   
     display: flex;
 }
 header div p{
@@ -36,6 +54,7 @@ header div p span{
     font-style: normal;
     font-weight: 400;    
 }
+
 header a{
     display: flex;
     color: #252525;
@@ -79,17 +98,32 @@ header a p {
 }
 .presentation__hero-photo{
 width: 100vw;
-   // 
-   margin-top: 20px;
-   // 
+  
+   @media(min-width:320px){
+   margin-top: 14px;
+    }
+    @media(min-width:768px){
+        margin-top: 40px;
+    }
+    @media(min-width:1200px){
+        margin-top: 51px;
+    }
 }
 .presentation__quote{
     text-align: center;
     font-weight: 300;
-    font-size: 30px;
+    @media(min-width:320px){
+        font-size: 30px;
+         }
+         @media(min-width:768px){
+            font-size: 52px;
+         }
+         @media(min-width:1200px){
+            font-size: 62px;
+         }
 }
 .presentation__quote span{
-    font-size: 30px;
+    // font-size: 30px;
     font-style: normal;
     font-weight: 800;
 }
@@ -136,21 +170,7 @@ width: 100vw;
 .presentation__logos li img{
 max-height: 40px;
 }
-.selected-work-section h3{
-   text-align: center;
-    font-weight: 300;
-    text-transform: uppercase;
-    @media(min-width:320px){
-        font-size: 80px;
-        letter-spacing: 3.2px;
-     }
-     @media(min-width:768px){
-        font-size: 150px;
-        letter-spacing: 6px;
-     }
-     
 
-}
 .work__image-list{
     //
     display: grid;
@@ -159,13 +179,39 @@ max-height: 40px;
     flex-direction: column;
     list-style: none;
     //
+    @media(min-width:1200px){
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+     }
 }
 .work__image-list-item{
     height: 434px; 
     width: 100%;
+    @media(max-width:767px){
+        height: 434px; 
+     }
+     @media(min-width:768px){
+        height: 921px; 
+     }
+     @media(min-width:1200px){
+        height: 567px; 
+     }
 }
 .buttons-item{
-    height: 200px;
+    @media(max-width:767px){
+        height: 200px;
+     }
+    @media(min-width:768px){
+        height: 209px;
+     }
+    @media(min-width:1200px){
+        height: 567px;
+     }
+   
+}
+#first-but-item{
+    grid-row: 1;
+    grid-column: 1
 }
 .work__image-list-image{
     width: 100%;
@@ -194,6 +240,7 @@ max-height: 40px;
     border-radius: 50px;
     background: #FFF;
     border: 0;
+    margin-right: 30px;
     font-family: Gilroy-Medium;
     font-size: 18px;
 
@@ -205,6 +252,7 @@ max-height: 40px;
     position: absolute;
     bottom: 10px;
     right: 10px;
+    margin-right: 0;
     // width: auto;
 }
 .black-button img{
@@ -220,28 +268,13 @@ max-height: 40px;
     padding: 15px 60px;
 }
 
-.our-team-section h3{
-    color: #252525;
-    font-family: Gilroy;
-    text-align: center;
-    font-size: 80px;
-    margin: 0;
-    margin-bottom: 50px;
-    margin-top: 30px;
-    text-transform: uppercase;
-}
 .our-team-section h5{
     color: #333;
     font-size: 30px;
     text-align: center;
-    font-family: Gilroy;
-    text-transform: uppercase;
-    margin: 0;
-}
-.our-team-section h5{
-    color: #333;
-    font-size: 30px;
-    text-align: center;
+    @media(min-width:768px){
+        text-align: left;
+    }
     font-family: Gilroy;
     text-transform: uppercase;
     margin: 0;
@@ -250,6 +283,11 @@ max-height: 40px;
     color: #333;
     margin: 0;
     text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    @media(min-width:768px){
+        text-align: left;
+    }
     font-family: Gilroy-Medium;
     font-size: 20px;
     margin-bottom: 15px;
@@ -259,22 +297,47 @@ max-height: 40px;
     display: grid;  
     padding: 0;
     gap:40px;
+    @media(min-width:1200px){
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        .our-team__jon-the-team-item{
+            grid-row: span 1;
+            display: flex;
+            flex-direction: column;
+            grid-column: span 2;
+            justify-content: center;
+            align-items: start;
+        }
+     }
 }
+
 .our-team__item-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    position: relative;
+   
+    @media(min-width:768px){
+        align-items: start;
+    }
     // gap: 30px;
 
+}
+.our-team__item-container img{
+    width: 100%;
 }
 .our-team-section div{
     display: flex;
     justify-content: center;
     margin-top: 15px;
+    width: 100%;
+    @media(min-width:768px){
+        justify-content: end;
+    }
 }
 .our-team-section div a{
     margin-right: 10px;
 }
+
 .our-team-section h6{
     text-align: center;
     font-family: Gilroy-Regular;
@@ -283,12 +346,7 @@ max-height: 40px;
     margin-top: 30px;
     text-transform: uppercase;
 }
-.our-team-section p{
-    text-align: center;
-    font-family: Gilroy-Bold;
-    font-size: 40px;
-    text-transform: uppercase;
-}
+
 .our-team-section button{
     border-radius: 50px;
     background: #252525;
