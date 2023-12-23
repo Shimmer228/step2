@@ -1,0 +1,22 @@
+.contact-section {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.contact-subtitle {
+  @include Gilroy-Bold($font-size: 31px);
+  text-align: center;
+  text-transform: uppercase;
+}
+.description {
+  @include Gilroy-Medium($font-size: 30px, $font-weight: 400);
+  text-align: center;
+}
+.btn::after {
+  content: url(../../../images/Contact_button.svg);
+  position: relative;
+  top: 3px;
+  padding-left: 10px;
+}

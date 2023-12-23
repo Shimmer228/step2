@@ -1,0 +1,37 @@
+.section__title {
+  margin: 10px 0;
+}
+.client-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.logo-img {
+  margin-top: 40px;
+}
+.card-subtitle {
+  @include Gilroy-Regular(
+    $font-size: 28px,
+    $font-weight: 800,
+    $line-height: 44px
+  );
+}
+.client-card-text {
+  @include Inter-Regular($line-height: 30px);
+}
+.client-info {
+  display: flex;
+  column-gap: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $dark-text;
+  &--border {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+.client-name {
+  @include Inter-Regular($font-weight: 600, $line-height: 20px);
+}
+.card-position {
+  @include Inter-Regular($line-height: 20px);
+}
