@@ -10,6 +10,11 @@
   background-image: url(../../../images/whatidoImage.svg);
   background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+  .background {
+    height: 991px;
+  }
+}
 .info-block {
   border-top: none;
 }
@@ -17,6 +22,11 @@
   @include Gilroy-Regular;
   text-align: center;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 120px;
+  }
 }
 .section-title {
   margin: 0px 35px 40px;
@@ -37,25 +47,55 @@
   text-transform: uppercase;
   padding-bottom: 10px;
 }
+@media (min-width: 768px) {
+  .card-title {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
 .card-title__before-1::before {
   content: "01";
   @include Gilroy-Light;
   padding-right: 2px;
+}
+@media (min-width: 768px) {
+  .card-title__before-1::before {
+    font-size: 44px;
+    line-height: 48px;
+  }
 }
 .card-title__before-2::before {
   content: "02";
   @include Gilroy-Light;
   padding-right: 2px;
 }
+@media (min-width: 768px) {
+  .card-title__before-2::before {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
 .card-title__before-3::before {
   content: "03";
   @include Gilroy-Light;
   padding-right: 2px;
 }
+@media (min-width: 768px) {
+  .card-title__before-3::before {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
 .card-title__before-4::before {
   content: "04";
   @include Gilroy-Light;
   padding-right: 2px;
+}
+@media (min-width: 768px) {
+  .card-title__before-4::before {
+    font-size: 44px;
+    line-height: 48px;
+  }
 }
 .card-text {
   @include Inter-Regular;
