@@ -1,25 +1,30 @@
 @font-face {
-  font-family: "Gilroy-Light";
+  font-family: "Gilroy-Regular", sans-serif;
   font-display: swap;
-  src: url(../../fonts/Gilroy-Light.woff2) format('woff2');
+  src: url(../../fonts/Gilroy-Regular.woff2) format("woff2");
   font-weight: 400;
 }
 @font-face {
-  font-family: "Gilroy-Medium";
+  font-family: "Gilroy-Light", sans-serif;
   font-display: swap;
-  src: url(../../fonts/Gilroy-Medium.woff2) format('woff2');
+  src: url(../../fonts/Gilroy-Light.woff2) format("woff2");
   font-weight: 400;
 }
 @font-face {
-  font-family: "Gilroy-Semibold";
+  font-family: "Gilroy-Medium", sans-serif;
   font-display: swap;
-  src: url(../../fonts/Gilroy-Semibold.woff2) format('woff2');
+  src: url(../../fonts/Gilroy-Medium.woff2) format("woff2");
   font-weight: 400;
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Gilroy-Semibold", sans-serif;
   font-display: swap;
-  src: url(../../fonts/Inter.woff2) format('woff2');
+  src: url(../../fonts/Gilroy-Semibold.woff2) format("woff2");
   font-weight: 400;
 }
-
+@font-face {
+  font-family: "Inter-Regular", sans-serif;
+  font-display: swap;
+  src: url(../../fonts/Inter-Regular.woff2) format("woff2");
+  font-weight: 400;
+}

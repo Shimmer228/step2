@@ -14,23 +14,27 @@
   border-top: none;
 }
 .title {
-  @include Gilroy;
+  @include Gilroy-Regular;
   text-align: center;
   text-transform: uppercase;
 }
 .section-title {
   margin: 0px 35px 40px;
 }
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
 .card {
-    border-bottom: 1px solid $dark-text;
-    margin-bottom: 30px;
-    &--border {
-        border: none;
-    }
+  border-bottom: 1px solid $dark-text;
+  &--border {
+    border: none;
+  }
 }
 .card-title {
-  @include Gilroy-Semibold;
-  position: relative;
+  @include Gilroy-Semibold($line-height: normal);
+  text-transform: uppercase;
   padding-bottom: 10px;
 }
 .card-title__before-1::before {
@@ -54,10 +58,10 @@
   padding-right: 2px;
 }
 .card-text {
-    @include Inter;
-    padding-bottom: 30px;
+  @include Inter-Regular;
+  padding-bottom: 30px;
 }
 .card-decor-line {
-    background-color: $dark-text;
-    color: $dark-text;
+  background-color: $dark-text;
+  color: $dark-text;
 }
