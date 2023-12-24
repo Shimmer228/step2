@@ -1,10 +1,29 @@
 .section__title {
   margin: 10px 0;
 }
+@media (min-width: 980px) {
+  .section__title {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+}
+@media (min-width: 980px) {
+  .client-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
 .client-card {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+}
+@media (min-width: 980px) {
+  .client-card {
+    padding: 30px;
+  }
 }
 .logo-img {
   margin-top: 40px;

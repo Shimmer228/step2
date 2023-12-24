@@ -10,9 +10,31 @@
   text-align: center;
   text-transform: uppercase;
 }
+@media (min-width: 580px) {
+  .contact-subtitle {
+    font-size: 64px;
+  }
+}
 .description {
   @include Gilroy-Medium($font-size: 30px, $font-weight: 400);
   text-align: center;
+}
+@media (min-width: 580px) {
+  .description {
+    font-size: 34px;
+  }
+}
+.btn {
+  &--contact-width {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 580px) {
+  .btn {
+    width: 188px;
+  }
 }
 .btn::after {
   content: url(../../../images/Contact_button.svg);
