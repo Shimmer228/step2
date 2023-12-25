@@ -25,6 +25,25 @@
     padding: 30px;
   }
 }
+@media (min-width: 980px) {
+  .client-card--border-1 {
+    border-right: 1px solid $dark-color-border;
+    border-bottom: 1px solid $dark-color-border;
+  }
+  .client-card--border-2 {
+    border-bottom: 1px solid $dark-color-border;
+  }
+  .client-card--border-3 {
+    border-left: 1px solid $dark-color-border;
+    border-bottom: 1px solid $dark-color-border;
+  }
+  .client-card--border-4 {
+    border-right: 1px solid $dark-color-border;
+  }
+  .client-card--border-6 {
+    border-left: 1px solid $dark-color-border;
+  }
+}
 .logo-img {
   margin-top: 40px;
 }
@@ -43,9 +62,14 @@
   column-gap: 20px;
   padding-bottom: 40px;
   border-bottom: 1px solid $dark-text;
-  &--border {
+  &--border-6 {
     border-bottom: none;
     padding-bottom: 0;
+  }
+}
+@media (min-width: 980px) {
+  .client-info {
+    border-bottom: none;
   }
 }
 .client-name {
