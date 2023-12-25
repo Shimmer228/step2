@@ -4,36 +4,43 @@
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+  }
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 .contact-subtitle {
   @include Gilroy-Bold($font-size: 31px);
   text-align: center;
   text-transform: uppercase;
-}
-@media (min-width: 580px) {
-  .contact-subtitle {
+  @media (min-width: 768px) {
     font-size: 64px;
+    text-align: start;
   }
 }
 .description {
   @include Gilroy-Medium($font-size: 30px, $font-weight: 400);
   text-align: center;
-}
-@media (min-width: 580px) {
-  .description {
+  @media (min-width: 768px) {
     font-size: 34px;
+  }
+  @media (min-width: 1200px) {
+    text-align: start;
   }
 }
 .btn {
   &--contact-width {
-    width: 280px;
     margin-left: auto;
     margin-right: auto;
   }
-}
-@media (min-width: 580px) {
-  .btn {
-    width: 188px;
+  @media (min-width: 1200px) {
+    margin-left: 0;
   }
 }
 .btn::after {

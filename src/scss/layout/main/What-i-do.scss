@@ -5,7 +5,7 @@
   row-gap: 20px;
   border-top: 1px solid $dark-text;
 }
-@media (min-width: 980px) {
+@media (min-width: 1200px) {
   .servises {
     flex-direction: row;
   }
@@ -14,39 +14,41 @@
   height: 478px;
   background-image: url(../../../images/whatidoImage.svg);
   background-repeat: no-repeat;
-}
-@media (min-width: 580px) {
-  .background {
+  @media (min-width: 768px) {
     height: 991px;
   }
-}
-@media (min-width: 980px) {
-  .background {
+  @media (min-width: 1200px) {
     width: 100vw;
     height: 940px;
   }
 }
 .info-block {
   border-top: none;
+  @media (min-width: 1200px) {
+    padding-left: 111px;
+    padding-right: 70px;
+  }
 }
 .title {
   @include Gilroy-Regular;
   text-align: center;
   text-transform: uppercase;
-}
-@media (min-width: 580px) {
-  .title {
-    font-size: 91px;
+  @media (min-width: 768px) {
+    font-size: 150px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 155px;
   }
 }
-.section-title {
+.servises-title {
   margin: 0px 35px 40px;
-}
-@media (min-width: 980px) {
-  .section-title {
+  @media (min-width: 1200px) {
     padding-top: 50px;
+    padding-bottom: 100px;
+    margin: 0;
   }
 }
+
 .card-wrapper {
   display: flex;
   flex-direction: column;
@@ -63,7 +65,7 @@
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-@media (min-width: 580px) {
+@media (min-width: 768px) {
   .card-title {
     font-size: 44px;
     line-height: 48px;
@@ -74,7 +76,7 @@
   @include Gilroy-Light;
   padding-right: 2px;
 }
-@media (min-width: 580px) {
+@media (min-width: 768px) {
   .card-title__before-1::before {
     font-size: 44px;
     line-height: 48px;
@@ -85,7 +87,7 @@
   @include Gilroy-Light;
   padding-right: 2px;
 }
-@media (min-width: 580px) {
+@media (min-width: 768px) {
   .card-title__before-2::before {
     font-size: 44px;
     line-height: 48px;
@@ -96,7 +98,7 @@
   @include Gilroy-Light;
   padding-right: 2px;
 }
-@media (min-width: 580px) {
+@media (min-width: 768px) {
   .card-title__before-3::before {
     font-size: 44px;
     line-height: 48px;
@@ -107,7 +109,7 @@
   @include Gilroy-Light;
   padding-right: 2px;
 }
-@media (min-width: 580px) {
+@media (min-width: 768px) {
   .card-title__before-4::before {
     font-size: 44px;
     line-height: 48px;
