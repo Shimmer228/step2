@@ -1,0 +1,126 @@
+.servises {
+  display: flex;
+  flex-direction: column;
+  background-color: $cream-background;
+  row-gap: 20px;
+  border-top: 1px solid $dark-text;
+}
+@media (min-width: 1200px) {
+  .servises {
+    flex-direction: row;
+  }
+}
+.background {
+  height: 478px;
+  background-image: url(../../../images/whatidoImage.svg);
+  background-repeat: no-repeat;
+  @media (min-width: 768px) {
+    height: 991px;
+  }
+  @media (min-width: 1200px) {
+    width: 100vw;
+    height: 1130px;
+  }
+}
+.info-block {
+  border-top: none;
+  @media (min-width: 1200px) {
+    padding-left: 111px;
+    padding-right: 70px;
+  }
+}
+.title {
+  @include Gilroy-Regular;
+  text-align: center;
+  text-transform: uppercase;
+  @media (min-width: 768px) {
+    font-size: 150px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 155px;
+  }
+}
+.servises-title {
+  margin: 0px 35px 40px;
+  @media (min-width: 1200px) {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin: 0;
+    font-size: 120px;
+  }
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.card {
+  border-bottom: 1px solid $dark-text;
+  &--border {
+    border: none;
+  }
+}
+.card-title {
+  @include Gilroy-Semibold($line-height: normal);
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .card-title {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+.card-title__before-1::before {
+  content: "01";
+  @include Gilroy-Light;
+  padding-right: 2px;
+}
+@media (min-width: 768px) {
+  .card-title__before-1::before {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+.card-title__before-2::before {
+  content: "02";
+  @include Gilroy-Light;
+  padding-right: 2px;
+}
+@media (min-width: 768px) {
+  .card-title__before-2::before {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+.card-title__before-3::before {
+  content: "03";
+  @include Gilroy-Light;
+  padding-right: 2px;
+}
+@media (min-width: 768px) {
+  .card-title__before-3::before {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+.card-title__before-4::before {
+  content: "04";
+  @include Gilroy-Light;
+  padding-right: 2px;
+}
+@media (min-width: 768px) {
+  .card-title__before-4::before {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+.card-text {
+  @include Inter-Regular;
+  padding-bottom: 30px;
+}
+.card-decor-line {
+  background-color: $dark-text;
+  color: $dark-text;
+}

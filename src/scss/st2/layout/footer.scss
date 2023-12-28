@@ -1,0 +1,38 @@
+.footer-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (min-width: 520px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+}
+.footer-text {
+  @include Gilroy-Regular($font-size: 13px);
+  text-align: center;
+}
+.footer-span {
+  @include Gilroy-Semibold(
+    $font-size: 13px,
+    $line-height: normal,
+    $font-weight: 600
+  );
+}
+.footer-social {
+  padding-top: 20px;
+}
+@media (min-width: 520px) {
+  .footer-social {
+    position: relative;
+    bottom: 8px;
+  }
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  list-style: none;
+}

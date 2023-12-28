@@ -1,9 +1,15 @@
 // * Це головний sass/scss файл проекту
 // * імпортуйте сюди всі інші ваші файли sass/scss
 @import "./st1/style1.scss";
-body{
-    background: #F5F3EA;
-    margin:0;
-    padding-right: 20px;
-    padding-left: 20px;
-}
+@import "./st2/utilities/variables.scss";
+@import "./st2/utilities/function.scss";
+@import "./st2/utilities/mixins.scss";
+@import "./st2/utilities/placeholder.scss";
+@import "./st2/base/container.scss";
+@import "./st2/base/normalize.scss";
+@import "./st2/base/typography.scss";
+@import "./st2/elements/Btn.scss";
+@import "./st2/layout/main/What-i-do.scss";
+@import "./st2/layout/main/client.scss";
+@import "./st2/layout/main/contact.scss";
+@import "./st2/layout/footer.scss";

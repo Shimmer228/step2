@@ -1,0 +1,11 @@
+.btn {
+  @include Gilroy-Medium($font-size: 18px, $font-weight: 400);
+  color: $button-white-text;
+  display: flex;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #252525;
+  border: none;
+}

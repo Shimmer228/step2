@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 *.class
 node_modules
@@ -21,3 +22,6 @@ node_modules
 
 hs_err_pid*
 replay_pid*
+=======
+node_modules
+>>>>>>> AntonGarmotko
