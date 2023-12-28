@@ -104,9 +104,25 @@ width: 100vw;
         margin-top: 51px;
     }
 }
+.presentation__text{
+
+  @media(max-width:1199px){
+    margin-top: 30px;
+    }
+    @media(min-width:1200px){
+      margin-top: 93px;
+      display: flex;
+      width: 100vw;
+      padding-bottom: 70px;
+      border-bottom: 1px solid #252525;
+      }
+
+}
 .presentation__quote{
     text-align: center;
     font-weight: 300;
+    display: block;
+    margin: 0;
     @media(min-width:320px){
         font-size: 30px;
          }
@@ -115,31 +131,41 @@ width: 100vw;
          }
          @media(min-width:1200px){
             font-size: 62px;
+            text-align: left;
+            margin-right: 70px;
+            margin-left: 70px;
          }
 }
 .presentation__quote span{
-    // font-size: 30px;
     font-style: normal;
     font-weight: 800;
 }
-// .social-section{
-//     width: 100vw;
-//     margin-left: -20px;
-// }
+
 .presentation__social{
     text-transform: uppercase;
     text-align: right;
     background-color: #252525;
     color: #FFF;
     font-family: Gilroy-Medium;
-    //
-    width: 100%;
-    
-    padding: 40px;
-    padding-left: 0px;
-    font-size: 28px; 
-    //
+     padding: 40px 30px;
+    @media(max-width:1199px){
+      width: 100%;
+      height: 188px;
+     
+      padding-left: 0px;
+      font-size: 28px; 
+       }
+     @media(min-width:1200px){
+      padding-left: 0px;
+      width: 100%; 
+      height: 100%;
+   
+      font-size: 32px;   
+   }
+   padding-left: 0px;
 }
+
+
 .presentation__social a img{
     margin-left: 20px;
     width: 50px;
@@ -262,8 +288,14 @@ max-height: 40px;
 .all-work-btn{
     // 
     width: 100%;
-    // 
+    @media(min-width:768px){
+      width: 187px;
+  }
     padding: 15px 60px;
+}
+.selected__all-work-container{
+  display: flex;
+  justify-content: center;
 }
 
 .our-team-section h5{
@@ -295,6 +327,10 @@ max-height: 40px;
     display: grid;  
     padding: 0;
     gap:40px;
+    @media(min-width:768px){
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
     @media(min-width:1200px){
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
@@ -332,10 +368,13 @@ max-height: 40px;
         justify-content: end;
     }
 }
-.our-team-section div a{
+.our-team__item-logos{
     margin-right: 10px;
-}
 
+}
+.our-team__item-link{
+  width: 100%;
+}
 .our-team-section h6{
     text-align: center;
     font-family: Gilroy-Regular;
@@ -357,5 +396,7 @@ max-height: 40px;
     color: #FFF;
     //
     width: 100%;
-    //
+    @media(min-width:1200px){
+     width: 163px;
+  }
 }
