@@ -72,6 +72,7 @@ header a{
 .presentation h2{
     margin-top: 30px;
     text-align: center;
+    font-family: Gilroy-SemiBold;
 
     @media(min-width:320px){
         font-size: 57px;
@@ -90,6 +91,7 @@ header a{
 .presentation h2 span{
     color: #252525;
     text-transform: capitalize;
+    font-family: Gilroy;
 }
 .presentation__hero-photo{
 width: 100vw;
@@ -149,7 +151,7 @@ width: 100vw;
     font-family: Gilroy-Medium;
      padding: 40px 30px;
     @media(max-width:1199px){
-      width: 100%;
+      width: 100vw;
       height: 188px;
      
       padding-left: 0px;
@@ -191,7 +193,17 @@ width: 100vw;
 .presentation__logos li img{
 max-height: 40px;
 }
-
+.selected-work-section{
+    @media(min-width:768px){
+       margin-bottom: 45px;
+     }
+     @media(max-width:767px){
+        margin-bottom: 30px;
+      }
+      @media(min-width:1200px){
+        margin-bottom: 109px;
+      }
+}
 .work__image-list{
     //
     display: grid;
@@ -271,13 +283,13 @@ max-height: 40px;
     align-items: center;
     background: #252525;
     color: #FFF;
-    height: 33px;
+    height: 53px;
     width: 102px;
     position: absolute;
     bottom: 10px;
     right: 10px;
     margin-right: 0;
-    // width: auto;
+    width: auto;
 }
 .black-button img{
     margin-left: 10px;
@@ -286,7 +298,7 @@ max-height: 40px;
     
 }
 .all-work-btn{
-    // 
+    margin-top: 70px;
     width: 100%;
     @media(min-width:768px){
       width: 187px;
@@ -297,7 +309,9 @@ max-height: 40px;
   display: flex;
   justify-content: center;
 }
-
+.our-team-section{
+    margin-bottom: 50px;
+}
 .our-team-section h5{
     color: #333;
     font-size: 30px;
@@ -309,7 +323,7 @@ max-height: 40px;
     text-transform: uppercase;
     margin: 0;
 }
-.our-team-section p{
+.our-team__position{
     color: #333;
     margin: 0;
     text-align: center;
@@ -322,6 +336,19 @@ max-height: 40px;
     font-size: 20px;
     margin-bottom: 15px;
 }
+.our-team__desire-text{
+    color: #333;
+    font-size: 40px;
+    text-align: center;
+    
+    font-family: Gilroy-Bold;
+    @media(min-width:768px){
+       
+     
+    font-size: 64px;
+    text-align: left;
+    }
+}
 .our-team-section ul{
     list-style: none;
     display: grid;  
@@ -330,6 +357,10 @@ max-height: 40px;
     @media(min-width:768px){
       grid-template-columns: repeat(2, 1fr);
       gap: 40px;
+      .our-team__jon-the-team-item{
+        grid-row: span 4;
+        grid-column: span 2;
+      }
     }
     @media(min-width:1200px){
         grid-template-columns: repeat(4, 1fr);
@@ -396,7 +427,7 @@ max-height: 40px;
     color: #FFF;
     //
     width: 100%;
-    @media(min-width:1200px){
+    @media(min-width:768px){
      width: 163px;
   }
 }
