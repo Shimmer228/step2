@@ -1,15 +1,15 @@
 // * Це головний sass/scss файл проекту
 // * імпортуйте сюди всі інші ваші файли sass/scss
-@import "./utilities/variables.scss";
-@import "./utilities/function.scss";
-@import "./utilities/mixins.scss";
-@import "./utilities/placeholder.scss";
-@import "./base/container.scss";
-@import "./base/normalize.scss";
-@import "./base/typography.scss";
-@import "./elements/Btn.scss";
+@import "./st2/utilities/variables.scss";
+@import "./st2/utilities/function.scss";
+@import "./st2/utilities/mixins.scss";
+@import "./st2/utilities/placeholder.scss";
+@import "./st2/base/container.scss";
+@import "./st2/base/normalize.scss";
+@import "./st2/base/typography.scss";
+@import "./st2/elements/Btn.scss";
 @import "./st1/style1.scss";
-@import "./layout/main/What-i-do.scss";
-@import "./layout/main/client.scss";
-@import "./layout/main/contact.scss";
-@import "./layout/footer.scss";
+@import "./st2/layout/main/What-i-do.scss";
+@import "./st2/layout/main/client.scss";
+@import "./st2/layout/main/contact.scss";
+@import "./st2/layout/footer.scss";
